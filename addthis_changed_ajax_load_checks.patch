@@ -1,0 +1,18 @@
+diff --git a/addthis.js b/addthis.js
+index 1705eee..363942e 100644
+--- a/addthis.js
++++ b/addthis.js
+@@ -9,8 +9,8 @@
+         }
+       );
+       if (context != window.document && window.addthis != null) {
+-        window.addthis.ost = 0;
+-        window.addthis.ready();
++          window.addthis = null;  	
++          window._ate = null;   
+       }
+     }
+   };
+-- 
+1.7.11.1
+
